@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Kumar Reddy - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e8f0;
+        }
+        .container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 40px auto;
+            background: white;
+            padding: 20mm;
+            box-sizing: border-box;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0 0 5px 0; color: #1e40af; font-size: 32px; letter-spacing: -0.5px; }
+        .subtitle { font-size: 16px; font-weight: 600; color: #475569; margin-bottom: 12px; }
+        .contact-info { font-size: 13px; color: #64748b; }
+        .contact-info a { color: #2563eb; text-decoration: none; margin-right: 15px; font-weight: 500; }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .header-content {
+            flex: 1;
+        }
+        .header-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e2e8f0;
+            margin-left: 20px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            color: #1e40af;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        
+        .item { margin-bottom: 16px; }
+        .item-title { font-weight: bold; font-size: 15px; margin: 0 0 3px 0; color: #0f172a; }
+        .item-subtitle { font-weight: 600; font-size: 13px; color: #3b82f6; margin: 0 0 6px 0; }
+        .item-desc { font-size: 13.5px; margin: 0; color: #475569; line-height: 1.6; }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            font-size: 13.5px;
+            color: #475569;
+        }
+        .skill-category { font-weight: bold; color: #0f172a; display: inline-block; width: 120px; }
+        
+        @media print {
+            body { background: white; margin: 0; }
+            .container { margin: 0; padding: 0; box-shadow: none; width: 100%; min-height: auto; }
+            .no-print { display: none !important; }
+        }
+        
+        .action-bar {
+            background: #1e40af;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .print-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: white;
+            color: #1e40af;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        .print-btn:hover {
+            background: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="action-bar no-print">
+        <button class="print-btn" onclick="window.print()">🖨️ Save as PDF / Print Resume</button>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Ashok Kumar Reddy</h1>
+                <div class="subtitle">ECE Engineer | Embedded Systems & IoT Enthusiast</div>
+                <div class="contact-info">
+                    <a href="mailto:nashokkumarreddy14@gmail.com">nashokkumarreddy14@gmail.com</a> | 
+                    <a href="https://linkedin.com/in/nashokkumarreddy615710" target="_blank">linkedin.com/in/nashokkumarreddy615710</a> | 
+                    <a href="https://github.com/nashokkumarreddy" target="_blank">github.com/nashokkumarreddy</a>
+                </div>
+            </div>
+            <img src="ashok.jpg" alt="Ashok Kumar Reddy" class="header-photo">
+        </div>
+
+        <!-- Objective -->
+        <div class="section-title">Objective</div>
+        <p class="item-desc">Highly motivated final-year Electronics and Communication Engineering (ECE) student seeking a challenging internship opportunity. Passionate about embedded programming, microcontrollers, and IoT. Equipped with strong academic foundations and hands-on project experience. Eager to contribute to innovative teams and solve complex engineering problems.</p>
+
+        <!-- Education -->
+        <div class="section-title">Education</div>
+        <div class="item">
+            <h3 class="item-title">B.Tech in Electronics and Communication Engineering</h3>
+            <p class="item-subtitle">Audisankara College of Engineering and Technology, Gudur | Final Year</p>
+        </div>
+        <div class="item">
+            <h3 class="item-title">Diploma in Electronics and Communication Engineering</h3>
+            <p class="item-subtitle">Sri Venkateswara College of Engineering and Technology, Chittoor</p>
+            <p class="item-desc">Foundation in Electronics and Communication principles, circuitry, and core engineering concepts.</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div><span class="skill-category">Programming:</span> C, C++, Python, Data Structures & Algorithms</div>
+            <div><span class="skill-category">Embedded & IoT:</span> Embedded C, Arduino, Sensor Integration, Basic Electronics</div>
+            <div><span class="skill-category">Tools:</span> MATLAB, VS Code, Arduino IDE, Git, Proteus</div>
+            <div><span class="skill-category">Competencies:</span> System Design, Problem Solving, Team Leadership</div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-title">Technical Projects</div>
+        <div class="item">
+            <h3 class="item-title">Real-Time Neutral Conductor Breakage Detection (C++)</h3>
+            <p class="item-desc">Designed an embedded solution to detect neutral conductor breakage in low-voltage distribution networks in real-time, significantly enhancing electrical safety and preventing hardware damage.</p>
+        </div>
+        <div class="item">
+            <h3 class="item-title">RISC-V 32-bit Processor (Verilog)</h3>
+            <p class="item-desc">Developed a Single-Cycle RISC-V Core in Verilog and simulated it in ModelSim. Explored instruction decoding, ALU operations, and data path integration for modern computer architecture.</p>
+        </div>
+        <div class="item">
+            <h3 class="item-title">UART Serial Communication Design (Verilog)</h3>
+            <p class="item-desc">Built a full duplex UART implementation featuring a custom baud rate generator, 16x oversampling receiver, and loopback verification. Optimized and ready for Xilinx/Intel FPGAs.</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section-title">Certifications & Achievements</div>
+        <div class="item">
+            <h3 class="item-title">Smart India Hackathon - Participant</h3>
+            <p class="item-desc">Actively participated and developed innovative technical solutions during this premier nationwide coding and hardware initiative.</p>
+        </div>
+        <div class="item">
+            <h3 class="item-title">PCB Design Certification - NPTEL</h3>
+            <p class="item-desc">Successfully completed an extensive, rigourous course and certification focusing on Printed Circuit Board design and fabrication principles.</p>
+        </div>
+    </div>
+
+    <script>
+        // Automatically open the print dialog when the page loads
+        window.onload = function() {
+            setTimeout(() => {
+                window.print();
+            }, 800);
+        };
+    </script>
+</body>
+</html>
