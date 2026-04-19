@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nashokkumarreddy.github.io/sitemap.xml
